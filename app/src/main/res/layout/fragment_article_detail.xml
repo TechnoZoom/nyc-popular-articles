@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/article_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="The One Item That Will Change Your Weeknight Cooking" />
+
+            <TextView
+                android:id="@+id/article_byline_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article_title_text_view"
+                tools:text="By MELISSA CLARK" />
+
+            <TextView
+                android:id="@+id/article_abstract_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article_byline_text_view"
+                tools:text="Douglas MacArthur was a well-known and experienced officer. The son of Lieutenant General Arthur MacArthur Jr., who was awarded the Medal of Honor for his services in the American Civil War, MacArthur had graduated at the top of the United States Military Academy class of 1903.[1] He was an aide-de-camp to his father from 1905 to 1906, and to President Theodore Roosevelt from 1906 to 1907.[2] During World War I he commanded the 84th Brigade of the 42nd (Rainbow) Division in the fighting on the Western Front. After the war he served as Superintendent of the United States Military Academy, and as Chief of Staff of the United States Army. He retired from the United States Army in 1937, and became a field marshal in the Philippine Army.[1]
+MacArthur's job was to advise the Philippine government on defense matters, and prepare the Philippine defense forces when the Philippines became fully independent, which was to be in 1946.[3] The Philippine Army, almost entirely manned and officered by Filipinos with only a small number of American advisors, was raised by conscription, with two classes of 20,000 men being trained each year, starting in 1937. In addition, there was a regular U.S. Army garrison of about 10,000, half of whom were Filipinos serving in the U.S. Army known as Philippine Scouts.[4] When MacArthur was recalled from retirement in July 1941 to become commander of United States Army Forces in the Far East (USAFFE) at the age of 61, he united the Philippine and United States Armies under one command.[1]MacArthur became a symbol of Allied resistance to the Japanese.
+In getting the Philippine Army ready for war, MacArthur faced an enormous task.[5] On a visit to the United States in 1937, MacArthur lobbied the Navy Department for the development of PT boats—small, fast boats armed with torpedoes—for which he believed that the geography of the Philippines, with its shallow waters and many coves, was ideally suited.[6][7] The nascent Philippine Navy acquired three, known as Q boats, after President Manuel L. Quezon.[8] In August 1941, the U.S. Navy created Motor Torpedo Boat Squadron Three, under the command of Lieutenant (junior grade) John D. Bulkeley. It was a half-strength squadron, with only six PT boats instead of the normal twelve, numbered 31 to 35 and 41.[7] It arrived at Manila in September 1941.[9] It was understood that a fleet consisting of more than PT boats would be required for a successful defense of the Philippines.[4]
+As early as 1907, U.S. naval and military planners had concluded that it would be impractical to repel an invasion of the Philippines. The best that could be hoped for was that the garrison could hold out on the Bataan peninsula until help arrived. In the 1920s it was estimated that they could do so for about 60 days. By the 1930s, the planners had become decidedly pessimistic in view of the increased capability of aircraft, and by 1936 they were agreed that the Philippines should be written off.[10] But in July 1941, this decision was abruptly reversed, and it became the policy of the U.S. government to defend and hold the Philippines. This was based, at least in part, on the belief that Boeing B-17 Flying Fortress bombers could deter or defeat an invading force.[11]Soon after the Japanese invasion of the Philippines in 1941, MacArthur, in accordance with the pre-war plan, declared Manila an open city and ordered his forces to withdraw from Luzon and go to Bataan. The Philippine government, the High Commissioner's office and MacArthur's USAFFE headquarters moved to Corregidor Island.[12] Although the dependents of U.S. military personnel had been sent back to the United States, MacArthur was, until his recall from retirement, a Philippine government employee, so his family had remained in the Philippines.[13] MacArthur's wife, Jean MacArthur, and young son, Arthur MacArthur IV, went with him to Corregidor.[14] Arthur celebrated his fourth birthday on Corregidor, on 21 February 1942.[15] When an aide asked about Arthur's possible fate, MacArthur replied He is a soldier's son."></TextView>
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>
