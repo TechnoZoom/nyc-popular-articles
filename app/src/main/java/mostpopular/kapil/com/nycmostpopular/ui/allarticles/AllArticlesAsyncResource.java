@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular.allarticles;
+package mostpopular.kapil.com.nycmostpopular.ui.allarticles;
 
 import javax.inject.Inject;
 

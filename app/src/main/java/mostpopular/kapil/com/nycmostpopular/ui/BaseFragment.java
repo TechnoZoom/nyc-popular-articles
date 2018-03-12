@@ -1,10 +1,8 @@
-package mostpopular.kapil.com.nycmostpopular;
+package mostpopular.kapil.com.nycmostpopular.ui;
 
 import android.support.v4.app.Fragment;
 
-/**
- * Created by kapilbakshi on 10/03/18.
- */
+import mostpopular.kapil.com.nycmostpopular.ui.commons.CustomProgressDialog;
 
 public class BaseFragment extends Fragment {
 

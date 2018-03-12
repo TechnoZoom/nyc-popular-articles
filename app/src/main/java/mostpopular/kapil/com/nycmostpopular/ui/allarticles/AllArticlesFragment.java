@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular.allarticles;
+package mostpopular.kapil.com.nycmostpopular.ui.allarticles;
 
 import android.arch.lifecycle.LifecycleRegistry;
 import android.arch.lifecycle.LifecycleRegistryOwner;
@@ -18,8 +18,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import mostpopular.kapil.com.nycmostpopular.BaseFragment;
-import mostpopular.kapil.com.nycmostpopular.NavigationController;
+import mostpopular.kapil.com.nycmostpopular.ui.BaseFragment;
+import mostpopular.kapil.com.nycmostpopular.ui.commons.NavigationController;
 import mostpopular.kapil.com.nycmostpopular.R;
 import mostpopular.kapil.com.nycmostpopular.ResourceLiveDataObserver;
 import mostpopular.kapil.com.nycmostpopular.databinding.FragmentAllArticlesBinding;
@@ -94,6 +94,9 @@ public class AllArticlesFragment extends BaseFragment implements Injectable, Lif
             @Override
             public void onSuccessfulFetch(Resource<List<Article>> resource) {
                 dismissProgressDialog();
+                if(resource.data.isEmpty()) {
+                    navigationController.navigateToErrorFragment(getString(R.string.no_articles_available));
+                }
                 allArticlesAdapter.setArticleList(resource.data);
             }
 
@@ -105,9 +108,9 @@ public class AllArticlesFragment extends BaseFragment implements Injectable, Lif
             @Override
             public void onErrorFetching(Resource<List<Article>> resource) {
                 dismissProgressDialog();
+                navigationController.navigateToErrorFragment(resource.message);
 
             }
-
 
         });
 

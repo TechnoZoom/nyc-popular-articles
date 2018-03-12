@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular.articledetails;
+package mostpopular.kapil.com.nycmostpopular.ui.articledetails;
 
 import android.arch.lifecycle.LifecycleRegistry;
 import android.arch.lifecycle.LifecycleRegistryOwner;
@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import mostpopular.kapil.com.nycmostpopular.BaseFragment;
+import mostpopular.kapil.com.nycmostpopular.ui.BaseFragment;
 import mostpopular.kapil.com.nycmostpopular.R;
 import mostpopular.kapil.com.nycmostpopular.databinding.FragmentArticleDetailBinding;
 import mostpopular.kapil.com.nycmostpopular.di.Injectable;
@@ -64,7 +64,7 @@ public class ArticleDetailsFragment extends BaseFragment implements Injectable, 
             }
 
             if(args.containsKey(ARTICLE_ABSTRACT) && args.getString(ARTICLE_ABSTRACT) != null) {
-                articleDetailFragmentBinding.articleBylineTextView.setText(args.getString(ARTICLE_ABSTRACT));
+                articleDetailFragmentBinding.articleAbstractTextView.setText(args.getString(ARTICLE_ABSTRACT));
             }
         }
     }

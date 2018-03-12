@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">NYC MostPopular Articles</string>
     <string name="action_settings">Settings</string>
-
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="loading">Loading</string>
+    <string name="server_error">Some issue with our servers. Please try after sometime</string>
+    <string name="no_articles_available">No articles available right now. Please try after sometime</string>
+
+
+
 </resources>
