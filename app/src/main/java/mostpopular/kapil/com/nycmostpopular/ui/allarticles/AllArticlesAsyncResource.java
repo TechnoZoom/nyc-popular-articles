@@ -8,6 +8,13 @@ import mostpopular.kapil.com.nycmostpopular.models.responses.AllArticlesResponse
 
 public class AllArticlesAsyncResource implements AllArticlesDataSource {
 
+    static {
+        System.loadLibrary("keys");
+    }
+
+    public native String getNYCApiKey();
+
+
     private MostPopularApis mostPopularApis;
 
     @Inject
@@ -17,6 +24,6 @@ public class AllArticlesAsyncResource implements AllArticlesDataSource {
 
     @Override
     public Flowable<AllArticlesResponse> getArticles() {
-        return mostPopularApis.getArticles();
+        return mostPopularApis.getArticles(getNYCApiKey());
     }
 }
