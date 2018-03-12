@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular;
+package mostpopular.kapil.com.nycmostpopular.ui.commons;
 
 import android.app.Activity;
 import android.app.ProgressDialog;

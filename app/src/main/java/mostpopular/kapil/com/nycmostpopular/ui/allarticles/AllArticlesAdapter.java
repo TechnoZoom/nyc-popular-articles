@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular.allarticles;
+package mostpopular.kapil.com.nycmostpopular.ui.allarticles;
 
 
 import android.content.Context;
@@ -13,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-import mostpopular.kapil.com.nycmostpopular.CircleTransform;
+import mostpopular.kapil.com.nycmostpopular.ui.commons.CircleTransform;
 import mostpopular.kapil.com.nycmostpopular.R;
 import mostpopular.kapil.com.nycmostpopular.constants.ArticleConstants;
 import mostpopular.kapil.com.nycmostpopular.models.Article;

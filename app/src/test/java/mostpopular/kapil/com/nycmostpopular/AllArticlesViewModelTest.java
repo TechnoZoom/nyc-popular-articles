@@ -7,8 +7,8 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import io.reactivex.schedulers.TestScheduler;
-import mostpopular.kapil.com.nycmostpopular.allarticles.AllArticlesRepository;
-import mostpopular.kapil.com.nycmostpopular.allarticles.AllArticlesViewModel;
+import mostpopular.kapil.com.nycmostpopular.ui.allarticles.AllArticlesRepository;
+import mostpopular.kapil.com.nycmostpopular.ui.allarticles.AllArticlesViewModel;
 import mostpopular.kapil.com.nycmostpopular.constants.ResourceStatus;
 import mostpopular.kapil.com.nycmostpopular.data.fakes.FakeArticleSource;
 

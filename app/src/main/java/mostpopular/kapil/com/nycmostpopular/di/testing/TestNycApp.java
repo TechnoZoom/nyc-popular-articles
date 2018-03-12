@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular;
+package mostpopular.kapil.com.nycmostpopular.di.testing;
 
 import android.app.Activity;
 import android.app.Application;
@@ -7,10 +7,8 @@ import javax.inject.Inject;
 
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;
-import mostpopular.kapil.com.nycmostpopular.di.AppInjector;
 
-
-public class NYCApp extends Application implements HasActivityInjector {
+public class TestNycApp extends Application implements HasActivityInjector {
 
     @Inject
     public DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
@@ -18,7 +16,7 @@ public class NYCApp extends Application implements HasActivityInjector {
     @Override
     public void onCreate() {
         super.onCreate();
-        AppInjector.init(this);
+        TestAppInjector.init(this);
     }
 
     @Override
@@ -26,4 +24,3 @@ public class NYCApp extends Application implements HasActivityInjector {
         return dispatchingAndroidInjector;
     }
 }
-

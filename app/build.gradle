@@ -8,7 +8,7 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "mostpopular.kapil.com.nycmostpopular.NycTestRunner"
     }
 
     testOptions {
@@ -35,6 +35,7 @@ android {
         exclude 'META-INF/rxjava.properties'
     }
 }
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -64,19 +65,25 @@ dependencies {
 
     implementation 'com.google.code.gson:gson:2.7'
 
-
-
     // Dagger core
     annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+    androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"
+
+
     implementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+    androidTestImplementation "com.google.dagger:dagger:$rootProject.daggerVersion"
+
+    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
+    androidTestImplementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
+
 
     // Dagger Android
     annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+    androidTestAnnotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.daggerVersion"
+
     implementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
-    // if you are not using support library, include this instead
-    implementation "com.google.dagger:dagger-android:$rootProject.daggerVersion"
+    androidTestImplementation "com.google.dagger:dagger-android-support:$rootProject.daggerVersion"
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation'com.android.support.test.espresso:espresso-core:2.2.2'
 }

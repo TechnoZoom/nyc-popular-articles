@@ -8,6 +8,4 @@ public class ArticleConstants {
        public static final String STANDARD_THUMBNAIL = "Standard Thumbnail";
 
     }
-
-
 }

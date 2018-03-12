@@ -7,7 +7,7 @@ import dagger.Binds;
 import dagger.Module;
 import dagger.multibindings.IntoMap;
 import mostpopular.kapil.com.nycmostpopular.NYCMostPopularModelFactory;
-import mostpopular.kapil.com.nycmostpopular.allarticles.AllArticlesViewModel;
+import mostpopular.kapil.com.nycmostpopular.ui.allarticles.AllArticlesViewModel;
 
 @Module
 public abstract class ViewModelModule {

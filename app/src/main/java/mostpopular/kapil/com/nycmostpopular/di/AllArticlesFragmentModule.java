@@ -2,8 +2,8 @@ package mostpopular.kapil.com.nycmostpopular.di;
 
 import dagger.Module;
 import dagger.Provides;
-import mostpopular.kapil.com.nycmostpopular.allarticles.AllArticlesAsyncResource;
-import mostpopular.kapil.com.nycmostpopular.allarticles.AllArticlesRepository;
+import mostpopular.kapil.com.nycmostpopular.ui.allarticles.AllArticlesAsyncResource;
+import mostpopular.kapil.com.nycmostpopular.ui.allarticles.AllArticlesRepository;
 import mostpopular.kapil.com.nycmostpopular.api.MostPopularApis;
 
 
@@ -11,7 +11,7 @@ import mostpopular.kapil.com.nycmostpopular.api.MostPopularApis;
 public class AllArticlesFragmentModule {
 
     @Provides
-    public AllArticlesRepository providesNotesRepository(MostPopularApis mostPopularApis) {
+    public AllArticlesRepository providesArticlesRepository(MostPopularApis mostPopularApis) {
         return new AllArticlesRepository(new AllArticlesAsyncResource(mostPopularApis));
     }
 

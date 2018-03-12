@@ -37,6 +37,15 @@ public class Article {
         this.mediaList = mediaList;
     }
 
+
+    public Article(String articleAbstract, String title, String byline, String publishDate,List<Media> mediaList) {
+        this.title = title;
+        this.publishDate = publishDate;
+        this.byline = byline;
+        this.mediaList = mediaList;
+        this.articleAbstract = articleAbstract;
+    }
+
     static public class Media {
 
         @SerializedName("media-metadata")

@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular.di;
+package mostpopular.kapil.com.nycmostpopular.di.testing;
 
 import android.app.Activity;
 import android.app.Application;
@@ -11,17 +11,16 @@ import android.util.Log;
 import dagger.android.AndroidInjection;
 import dagger.android.support.AndroidSupportInjection;
 import dagger.android.support.HasSupportFragmentInjector;
-import mostpopular.kapil.com.nycmostpopular.NYCApp;
+import mostpopular.kapil.com.nycmostpopular.di.Injectable;
 
 
-public class AppInjector {
-    private AppInjector() {
+public class TestAppInjector {
+    private TestAppInjector() {
     }
 
-    public static void init(NYCApp nycApp) {
-        Log.d("AppInjector","init");
-
-        DaggerAppComponent.builder().application(nycApp)
+    public static void init(TestNycApp nycApp) {
+        Log.d("TestAppInjector","init");
+        DaggerTestAppComponent.builder().application(nycApp)
                 .build().inject(nycApp);
         nycApp
                 .registerActivityLifecycleCallbacks(new Application.ActivityLifecycleCallbacks() {

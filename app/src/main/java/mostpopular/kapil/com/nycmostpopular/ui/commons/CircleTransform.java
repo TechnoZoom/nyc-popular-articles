@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular;
+package mostpopular.kapil.com.nycmostpopular.ui.commons;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;

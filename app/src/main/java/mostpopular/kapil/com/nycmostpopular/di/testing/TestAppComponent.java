@@ -1,4 +1,4 @@
-package mostpopular.kapil.com.nycmostpopular.di;
+package mostpopular.kapil.com.nycmostpopular.di.testing;
 
 import android.app.Application;
 
@@ -7,20 +7,20 @@ import javax.inject.Singleton;
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;
-import mostpopular.kapil.com.nycmostpopular.NYCApp;
+import mostpopular.kapil.com.nycmostpopular.di.MainActivityModule;
 
 @Singleton
 @Component(modules = {
         AndroidInjectionModule.class,
-        AppModule.class,
+        TestAppModule.class,
         MainActivityModule.class
 })
- interface AppComponent {
+ interface TestAppComponent {
 
     @Component.Builder
     interface Builder {
         @BindsInstance Builder application(Application application);
-        AppComponent build();
+        TestAppComponent build();
     }
-    void inject(NYCApp nycApp);
+    void inject(TestNycApp nycApp);
 }
